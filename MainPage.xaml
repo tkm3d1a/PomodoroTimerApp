@@ -10,7 +10,8 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                x:Name="MainImage"
+                Source="tomato_1.jpg"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
@@ -31,9 +32,17 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
+                WidthRequest="300"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
+            <Button
+                x:Name="OneMoreTimeBtn"
+                Text="Just Another Button"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Clicked="OneMoreTimeBtn_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>
