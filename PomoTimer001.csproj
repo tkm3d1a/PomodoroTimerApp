@@ -54,4 +54,25 @@
 	  <None Remove="Resources\Images\tomato_3.jpg" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Views\MainPage1.xaml.cs">
+	    <DependentUpon>MainPage1.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MainPage3.xaml.cs">
+	    <DependentUpon>MainPage3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MainPage2.xaml.cs">
+	    <DependentUpon>MainPage2.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\MainPage3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPage2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

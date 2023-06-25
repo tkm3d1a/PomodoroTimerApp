@@ -3,12 +3,22 @@
     x:Class="PomoTimer001.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:PomoTimer001"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:PomoTimer001.Views"
+    Shell.FlyoutBehavior="Locked">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate views:MainPage1}"
+        Route="MainPage1" />
+
+    <ShellContent
+        Title="Home2"
+        ContentTemplate="{DataTemplate views:MainPage2}"
+        Route="MainPage2" />
+
+    <ShellContent
+        Title="Home3"
+        ContentTemplate="{DataTemplate views:MainPage3}"
+        Route="MainPage3" />
 
 </Shell>

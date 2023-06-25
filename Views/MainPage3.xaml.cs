@@ -1,12 +1,12 @@
-﻿namespace PomoTimer001;
+﻿namespace PomoTimer001.Views;
 
-public partial class MainPage : ContentPage
+public partial class MainPage3 : ContentPage
 {
 	int count = 0;
 	List<String> tomatoList = new();
     Random rnd = new();
 
-    public MainPage()
+    public MainPage3()
 	{
 		tomatoList.Add("tomato_1.jpg");
         tomatoList.Add("tomato_2.jpg");
@@ -31,7 +31,7 @@ public partial class MainPage : ContentPage
     private void OneMoreTimeBtn_Clicked(object sender, EventArgs e)
     {
 		CounterBtn.Text = "I seem to have been reset...";
-		MainImage.Source = tomatoList[rnd.Next(tomatoList.Count)];
+		//MainImage.Source = tomatoList[rnd.Next(tomatoList.Count)];
 		count = 0;
     }
 }
